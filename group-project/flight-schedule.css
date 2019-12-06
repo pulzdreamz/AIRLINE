@@ -1,0 +1,420 @@
+html,
+body {
+  background: black;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #1bb1dc;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #0a98c0;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/*Top Bar*/
+#topbar {
+  padding: 0 0 10px 0;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+#topbar .social-links {
+  text-align: right;
+  color: white;
+}
+
+#topbar .social-links a {
+  color: #535074;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+  color: white;
+}
+
+#topbar .social-links a:hover {
+  color: black;
+}
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+  color: black;
+}
+
+/*Header Style*/
+#header {
+  height: 110px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  background-color: black;
+}
+
+#header.header-scrolled,
+#header.header-pages {
+  height: 70px;
+  padding: 15px 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+
+#header.header-scrolled #topbar,
+#header.header-pages #topbar {
+  display: none;
+}
+
+#header .logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: white;
+}
+
+#header .logo h1 a,
+#header .logo h1  {
+  color: white;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 7px 0;
+  max-height: 26px;
+}
+
+.main-pages {
+  margin-top: 60px;
+}
+
+/*Main Nav*/
+/* Desktop Navigation */
+
+.main-nav,
+.main-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+}
+
+.main-nav a {
+  display: block;
+  position: relative;
+  color: white;
+  padding: 10px 15px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.main-nav a:hover,
+.main-nav .active > a,
+.main-nav li:hover > a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav .drop-down ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 30px);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: ease all 0.3s;
+}
+
+.main-nav .drop-down:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.main-nav .drop-down li {
+  min-width: 180px;
+  position: relative;
+}
+
+.main-nav .drop-down ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  color: #065e77;
+}
+
+.main-nav .drop-down ul a:hover,
+.main-nav .drop-down ul .active > a,
+.main-nav .drop-down ul li:hover > a {
+  color: #1bb1dc;
+}
+
+.main-nav .drop-down > a:after {
+  content: "\f107";
+  font-family: FontAwesome;
+  padding-left: 10px;
+}
+
+.main-nav .drop-down .drop-down ul {
+  top: 0;
+  left: calc(100% - 30px);
+}
+
+.main-nav .drop-down .drop-down:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+}
+
+.main-nav .drop-down .drop-down > a {
+  padding-right: 35px;
+}
+
+.main-nav .drop-down .drop-down > a:after {
+  content: "\f105";
+  position: absolute;
+  right: 15px;
+}
+
+/*Intro Section*/
+#intro {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #f5f8fd  url("https://pulzdreamz.github.io/Image/maid-milinkic-Sa6Nimow-_Y-unsplash.jpg")center top no-repeat;
+  background-size: cover;
+}
+
+#intro .intro-info h1 {
+  color: white;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 0px;
+  border-color: black;
+  background-color: black;
+  margin-bottom: 300px;
+  font-size: 80px;
+  font-family: 'Kreon', serif;
+  width: 1200px;
+  padding-left: 10px;
+  text-align: center;
+  margin-left: -60px;
+}
+
+#intro .intro-info .btn-get-started,
+#intro .intro-info .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: black;
+  position: absolute;
+  left: 430px;
+  bottom: 60px;
+  width: 250px;
+}
+
+#intro .intro-info .btn-get-started:hover,
+#intro .intro-info .btn-services:hover {
+  background: white;
+  color: black;
+}
+
+/* About Us Section */
+
+#about {
+  padding: 80px 0;
+}
+
+#about .about-content {
+  padding-top: 40px;
+  color: white;
+  position: absolute;
+  left: 600px;
+  bottom: 50px;
+  width: 600px;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#about .about-content h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#about .about-content h3 {
+  color: #696592;
+  font-weight: 400;
+  font-size: 22px;
+  font-style: italic;
+}
+
+#about .about-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about .about-content ul li {
+  padding-bottom: 10px;
+}
+
+#about .about-content ul li i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1bb1dc;
+}
+
+#about .about-img {
+  position: relative;
+  margin: 30px 30px 30px 30px;
+  width: 500px;
+  margin-left: -30px;
+}
+
+#about .about-img img {
+  width: 100%;
+  border: 8px solid black;
+  transition: 0.5s;
+}
+
+#about .about-img img:hover {
+  width: 100%;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+#about .about-img::before {
+  position: absolute;
+  left: -31px;
+  top: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: "";
+  background-color: #ebf1fa;
+  transition: 0.5s;
+}
+
+#about .about-img::after {
+  position: absolute;
+  right: -31px;
+  bottom: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: "";
+  background-color: #ebf1fa;
+  transition: 0.5s;
+}
+
+/* Services Section */
+
+#section-one {
+  padding: 60px 0 40px 0;
+  background-color: black
+}
+
+#section-one .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#section-one .box:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#section-one .icon {
+  margin: 0 auto 15px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+#section-one .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+#section-one .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#section-one .title a {
+  color: #111;
+}
+
+#section-one .box:hover .title a {
+  color: #1bb1dc;
+}
+
+#section-one .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
